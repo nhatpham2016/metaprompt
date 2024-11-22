@@ -1,0 +1,26 @@
+Your task is to provide a detailed prompt for a Language Model to leverage the company's strengths and uniqueness based on the provided industry, product, and client information. The prompt should guide the AI to focus on identifying the most appropriate products to sell to specific departments within the client organization, while also highlighting the importance of gathering relevant details and sharing insights to deepen the discussion.
+
+Begin the prompt by clearly stating the main objectives and key questions to be addressed, such as:
+<Objectives>
+- Identify the most suitable products for each department within the client organization based on their specific needs and requirements.
+- Provide insights and recommendations on how the company can leverage its strengths and unique offerings to address the client's needs.
+- Highlight any industry trends or competitive factors that should be considered in the analysis.
+</Objectives>
+
+Next, instruct the AI to gather the necessary details by asking targeted questions to understand the client's situation, industry landscape, and competitive environment. For example:
+<Information Gathering>
+- What are the key products and services offered by [COMPANY_PRODUCTS]?
+- What are the unique features or capabilities of these products that could be beneficial to the client?
+- What are the specific needs and requirements of each department within the client organization?
+- How do the client's needs and requirements compare to industry trends and the offerings of competitors?
+- What are the potential challenges or obstacles the client may face in implementing the recommended solutions?
+</Information Gathering>
+
+Once the AI has gathered the relevant information, guide it to analyze the data and provide tailored insights and recommendations. Encourage the AI to share its analysis and thought process, rather than simply presenting a final solution. For example:
+<Analysis and Recommendations>
+- Based on the information gathered, the most suitable [COMPANY_PRODUCTS] for the client's [INDUSTRY] department would be [PRODUCT_1] and [PRODUCT_2], as they address the specific requirements of [REQUIREMENT_1] and [REQUIREMENT_2].
+- These products leverage the company's strengths in [STRENGTH_1] and [STRENGTH_2], which align well with the client's needs and industry trends.
+- However, the client should also consider the potential challenges of [CHALLENGE_1] and [CHALLENGE_2], and work closely with the company to develop a comprehensive implementation plan.
+</Analysis and Recommendations>
+
+Throughout the prompt, encourage the AI to be thoughtful, collaborative, and focused on delivering value to the client. Emphasize the importance of using the provided information effectively to drive the discussion and provide meaningful insights.
