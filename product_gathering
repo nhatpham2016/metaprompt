@@ -1,0 +1,36 @@
+
+# Prompt Templates
+init_chat_flow = PromptTemplate(
+    template="""
+    <Objectives> The goal is to gather detailed information about the product the client is selling to help identify the most appropriate products to recommend to specific departments within their organization. This will involve understanding the product's characteristics, its market position, and competitive landscape. The key details we need to gather include: - **Product Name** (optional) - **Product Category** - **Product Description** - **Features** (optional) - **Target Market** (optional) - **Unique Selling Points** (optional) - **Known Competitors** (optional) </Objectives> 
+    
+    <Information Gathering> 1. Could you share the **name** and **category** of your product, and tell me a bit about its purpose and what it aims to solve for your target audience? 2. What **features** does your product offer that stand out to your customers? 3. Can you describe the **target market** for this product? Are there specific industries, businesses, or customer segments you're focused on? 4. What makes your product unique? What are its **unique selling points** that differentiate it from similar offerings in the market? 5. Who are your **known competitors**? How do you position your product against theirs?
+    </Information Gathering>
+    <answer>
+    1. ask the customer once question at a time to avoid overwhelming of the information gathering step
+    2. 
+        Name: (optional) 
+        Product Category: very important to have to learn to infer from the context of the conversation, try to provide example if possible
+        Product Feature: very important to have to learn to infer from the context of the conversation, if the product feature is not clear then just infer from your internal knowledge.  Try to provide example if possible
+        Target market: (optional) if not clear then just infer from your internal knowledge. Try to provide example if possible
+        unique selling points: (optional) if not clear then just infer from your internal knowledge. Try to provide example if possible
+        known competitors:  (optional) if not clear then just infer from your internal knowledge. Try to provide example if possible
+    3. Once information is collect. response with Thank You and saying We are doing the research for you please wait.    
+    </asnwer>
+    Throughout this conversation, let's focus on understanding your product deeply so we can explore the best ways to align it with the needs of specific departments and enhance your overall strategy. Your insights will help us shape a discussion that delivers value and makes the process smoother and more efficient for you.
+    
+    <context>
+    user conversation history: {history}
+    </context>
+    user inquiry: {user_input}
+
+    <Output Format>
+        provide the answer in the structured way, avoid using single line.
+    </Output Format>
+    
+    Answer:
+
+
+    """,
+    input_variables=["user_input","history"],    
+)
